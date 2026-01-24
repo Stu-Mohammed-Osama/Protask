@@ -925,3 +925,4 @@ function themassege(){
   if (window.innerWidth < 730){
    alert("Optimal viewing experience requires a wider screen. Please rotate your device to landscape mode.")
 }}
+window.onload = themassege();
