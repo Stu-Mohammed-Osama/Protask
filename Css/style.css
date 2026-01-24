@@ -813,5 +813,7 @@ h1 , h2 , h3 , h4 , h5 , h6, p{
 #easyLevel , #normalLevel , #hardLevel , #orderLevelButton, #searchDateButton , #levelOne, #levelTwo, #levelThree{
   font-size: 15px;
   font-weight: 800;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
