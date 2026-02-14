@@ -52,7 +52,7 @@ let newTask = {
   dayValue:"",
   monthValue:"",
   yearValue:"",
-  levelName:"EASY",
+  levelName:"ROUTINE",
   levelId:"easyLevel",
   circleBackground:"white",
   noteTitle: "",
@@ -259,17 +259,17 @@ function addNewTask(){
       newTask.createDate = Date.now();
       let lowerInput = input.value.toLowerCase();
       if(lowerInput.includes("easy")){
-         newTask.levelName = "EASY";
+         newTask.levelName = "ROUTINE";
          newTask.levelId = "easyLevel";
          newTask.name = newTask.name.replace(/easy/i, "");
       }
       if(lowerInput.includes("normal")){
-         newTask.levelName = "NORMAL";
+         newTask.levelName = "MODERATE";
          newTask.levelId = "normalLevel";
          newTask.name = newTask.name.replace(/normal/i, "");
       }
       if(lowerInput.includes("hard")){
-         newTask.levelName = "HARD";
+         newTask.levelName = "COMPLEX";
          newTask.levelId = "hardLevel";
          newTask.name = newTask.name.replace(/hard/i, "");
       }
@@ -336,7 +336,7 @@ function addNewTask(){
           dayValue:"",
           monthValue:"",
           yearValue:"",
-          levelName:"EASY",
+          levelName:"ROUTINE",
           levelId:"easyLevel",
           circleBackground:"white",
           noteTitle: "",
@@ -363,7 +363,7 @@ function addNewTask(){
           dayValue:"",
           monthValue:"",
           yearValue:"",
-          levelName:"EASY",
+          levelName:"ROUTINE",
           levelId:"easyLevel",
           circleBackground:"white",
           noteTitle: "",
@@ -450,7 +450,7 @@ function changeLevel(i) {
 function changeToEasy(){
   if(storageOfTasks[specificTask].taskOpacity == "1"){
     storageOfTasks[specificTask].levelId = "easyLevel";
-    storageOfTasks[specificTask].levelName = "EASY";
+    storageOfTasks[specificTask].levelName = "ROUTINE";
     showTasks();
     localStorage.tasks = JSON.stringify(storageOfTasks);
   }
@@ -458,7 +458,7 @@ function changeToEasy(){
 function changeToNormal(){
   if(storageOfTasks[specificTask].taskOpacity == "1"){
     storageOfTasks[specificTask].levelId = "normalLevel";
-    storageOfTasks[specificTask].levelName = "NORMAL";
+    storageOfTasks[specificTask].levelName = "MODERATE";
     showTasks();
     localStorage.tasks = JSON.stringify(storageOfTasks);
   }
@@ -466,7 +466,7 @@ function changeToNormal(){
 function changeToHard(){
   if(storageOfTasks[specificTask].taskOpacity == "1"){
     storageOfTasks[specificTask].levelId = "hardLevel";
-    storageOfTasks[specificTask].levelName = "HARD";
+    storageOfTasks[specificTask].levelName = "COMPLEX";
     showTasks();
     localStorage.tasks = JSON.stringify(storageOfTasks);
   }
