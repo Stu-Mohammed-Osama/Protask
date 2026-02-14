@@ -493,7 +493,7 @@ function changeToImgOne(){
 
 function changeToImgTwo(){
   if(storageOfTasks[specificTask].taskOpacity == "1"){
-    storageOfTasks[specificTask].imgSrc = "Imgs/29874943_GST CAM 939-13.jpg";
+    storageOfTasks[specificTask].imgSrc = "Imgs/29874943_GST.jpg";
     showTasks();
     localStorage.tasks = JSON.stringify(storageOfTasks);
   }
